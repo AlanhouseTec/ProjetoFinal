@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  color: beige;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 22%, rgb(0, 212, 255) 100%);
+}
+header .vazia {
+  width: 50px;
+}
+header figure {
+  display: flex;
+  align-items: center;
+}
+header figure img {
+  width: 100px;
+  height: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 86vh;
+  padding-top: 10px;
+  background-color: beige;
+}
+main .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+main .login {
+  border-top: 10px red;
+  width: 50%;
+  height: 300px;
+  margin-top: 10%;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+main .login input {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .login .manter {
+  display: flex;
+  align-items: center;
+}
+main .login .manter input {
+  margin-right: 10px;
+}
+main .login button {
+  width: 75px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(172, 255, 47, 0.8);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  color: beige;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 22%, rgb(0, 212, 255) 100%);
+}
+
+@media only screen and (MAX-WIDTH: 400px) {
+  header h1 {
+    width: 40%;
+    font-size: 22px;
+  }
+  header button {
+    width: 17%;
+    padding: 2%;
+    font-weight: bold;
+  }
+  header figure img {
+    width: 70px;
+    height: 35px;
+  }
+  main {
+    width: 100%;
+  }
+  main .login {
+    width: 75%;
+    margin-top: 27%;
+  }
+}/*# sourceMappingURL=index.css.map */
