@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    color: beige;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 100%);
+
+    .vazia{
+        width: 50px;
+    }
+    figure{
+        display: flex;
+        align-items: center;
+        img{
+            width: 100px;
+            height: 50px;
+        }
+    }
+    
+}
+main {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    .container{
+        margin: 15px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 86vh;
+        padding-top: 10px;
+        background-color: lightgray;
+        border-radius: 20px;
+        figure{
+            margin-bottom: 20px;
+            img{
+                width: 150px;
+                height: 75px;
+            }
+        }
+        .menu{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 40px;
+            .bloco{
+                cursor: pointer;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    color: beige;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 100%);
+}
+
+
+@media only screen and (MAX-WIDTH: 400px) {
+    header {
+        h1{
+            width: 40%;
+            font-size: 22px;
+        }
+        button {
+            width: 17%;
+            padding: 2%;
+            font-weight: bold;
+        }
+        figure{
+            img {
+                width: 70px;
+                height: 35px;
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        .container{
+            width: 100%;
+            background-color: beige;
+        }
+    }
+}
