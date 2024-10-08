@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    color: beige;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 22%, rgba(0, 212, 255, 1) 100%);
+
+    .vazia {
+        width: 50px;
+    }
+
+    figure {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100px;
+            height: 50px;
+        }
+    }
+}
+
+main {
+    min-height: 90vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .funcoes {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        height: 60px;
+        width: 100%;
+
+        button {
+            width: 150px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(172, 255, 47, 0.5);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+
+    // Estilos para Funcionários
+    #funcionarios {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        background-color: red;
+        height: 100vh;
+        margin: 20px 0;
+        border-radius: 15px;
+
+        #adicionarfunc {
+            position: absolute;
+            top: 185px;
+            left: 87%;
+            width: 80px;
+            height: 25px;
+        }
+
+        #novofunc {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .formulario {
+                width: 60%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                background-color: #fff;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        display: flex;
+                        align-items: center;
+                        margin: 5px;
+                        font-weight: bold;
+                    }
+
+                    input, select {
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                    }
+
+                    .desativar {
+                        margin-left: 10px;
+                    }
+
+                    button {
+                        width: 100%;
+                        padding: 10px;
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #45a049;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Estilos para Mercadorias
+    #mercadorias {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        background-color: red;
+        min-height: 100vh;
+        margin: 20px 0;
+        border-radius: 15px;
+
+        #adicionarmerc {
+            position: absolute;
+            top: 185px;
+            left: 87%;
+            width: 80px;
+            height: 25px;
+        }
+
+        #novamerc {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            .desativar {
+                font-size: 16px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input{
+                    margin-left: 10px;
+                }
+            }
+            .form-group {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+
+                label {
+                    margin: 5px;
+                    font-weight: bold;
+                }
+
+                input[type="text"], 
+                input[type="date"], 
+                select, 
+                textarea {
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    font-size: 16px;
+                }
+
+                textarea {
+                    height: 100px;
+                    resize: none;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    font-size: 18px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #45a049;
+                    }
+                }
+            }
+        }
+    }
+
+    // Estilos para Configurações (se necessário)
+    #configuracoes {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        background-color: red;
+        min-height: 100vh;
+        margin: 20px 0;
+        border-radius: 15px;
+        .area{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            .form-group {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+    
+                label {
+                    margin: 5px;
+                    font-weight: bold;
+                }
+    
+                input[type="text"],
+                input[type="number"],
+                select {
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    font-size: 16px;
+                }
+    
+                button {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    font-size: 18px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: #45a049;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    color: beige;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 22%, rgba(0, 212, 255, 1) 100%);
+}

@@ -1,1 +1,1 @@
-
+variavel.style.display = 'none';
