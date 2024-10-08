@@ -9,26 +9,39 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
-    color: beige;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 100%);
+    padding: 8px;
+    height: 50px;
+    color: white;
+    background: rgb(255,102,0);
+    background: linear-gradient(90deg, rgba(255,102,0,1) 0%, rgba(255,153,0,1) 25%, rgba(255,230,145,1) 100%);
 
-    .vazia{
-        width: 50px;
+    .logoff {
+        background-color: transparent; 
+        border: none;
+        cursor: pointer; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: rgba(255, 230, 145, 0.7);
+            border-radius: 50%; /* Arredonda o botão */
+            transform: scale(1.1); 
+        }
     }
-    figure{
+    figure {
         display: flex;
         align-items: center;
-        img{
+
+        img {
             width: 100px;
             height: 50px;
         }
     }
-    
 }
 main {
-    background-color: beige;
+    background-color: white;
     display: flex;
     justify-content: center;
     .container{
@@ -44,7 +57,7 @@ main {
         figure{
             margin-bottom: 20px;
             img{
-                width: 150px;
+
                 height: 75px;
             }
         }
@@ -67,10 +80,10 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2%;
-    color: beige;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(0,212,255,1) 100%);
+    padding: 1%;
+    color: White;
+    background: rgb(255,102,0);
+    background: linear-gradient(90deg, rgba(255,102,0,1) 0%, rgba(255,153,0,1) 25%, rgba(255,230,145,1) 100%);
 }
 
 

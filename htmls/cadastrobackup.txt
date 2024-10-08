@@ -1,0 +1,167 @@
+<div id="novofunc" style="display: none;">
+                <div class="conteudo"><h2>Formulário de Funcionário</h2></div>
+
+                <div class="formulario">
+                    <div class="grupo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+                        <label for="data-nascimento">Data de Nascimento:</label>
+                        <input type="date" id="data-nascimento" name="data-nascimento">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha">
+                        <label for="telefone">Telefones:</label>
+                        <input type="text" id="telefone" name="telefone">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep">
+                    </div>
+                        
+                    <div class="grupo">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade">
+                    </div>
+
+                    <div class="grupo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf">
+                    </div>
+
+                    <div class="grupo">
+                        <label for="uf">UF:</label>
+                        <select id="uf" name="uf">
+                            <option value="MG">AC</option>
+                            <option value="MG">AL</option>
+                            <option value="MG">AP</option>
+                            <option value="MG">AM</option>
+                            <option value="MG">BA</option>
+                            <option value="MG">CE</option>
+                            <option value="MG">DF</option>
+                            <option value="MG">ES</option>
+                            <option value="MG">GO</option>
+                            <option value="MG">MA</option>
+                            <option value="MG">MT</option>
+                            <option value="MG">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="MG">PA</option>
+                            <option value="SP">PB</option>
+                            <option value="RJ">PR</option>
+                            <option value="MG">PE</option>
+                            <option value="MG">PI</option>
+                            <option value="MG">RJ</option>
+                            <option value="MG">RN</option>
+                            <option value="MG">RS</option>
+                            <option value="MG">RO</option>
+                            <option value="MG">RR</option>
+                            <option value="MG">SC</option>
+                            <option value="MG">SP</option>
+                            <option value="MG">SE</option>
+                            <option value="MG">TO</option>
+                            
+                        </select>
+                        <label for="rg">RG:</label>
+                        <input type="text" id="rg" name="rg">
+                    </div>
+
+                    <div class="desativar">
+                        <label for="desativa1">Desativar funcionário</label>
+                        <input id="desativa1" type="checkbox">
+                    </div>
+                </div>
+
+                <div class="conteudo">
+                    <button id="addfunc">Adicionar</button>
+                </div>
+                
+</div>
+
+
+
+<div id="novamerc" style="display: none;">
+                <div class="conteudo"><h2>Formulário de Mercadoria</h2></div>
+
+                <div class="formulario">
+                    <div class="grupo">
+                        <label for="mercadoria">Mercadoria:</label>
+                        <input type="text" id="mercadoria" name="mercadoria">
+                        <label for="grupo">Grupo:</label>
+                        <input type="text" id="grupo" name="grupo">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="referencia">Referência:</label>
+                        <input type="text" id="referencia" name="referencia">
+                        <label for="subgrupo">SubGrupo:</label>
+                        <input type="text" id="subgrupo" name="subgrupo">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="observacao">Observações:</label>
+                        <input type="text" id="observacao" name="observacao">
+                        <label for="ponto-equilibrio">Ponto Equilíbrio:</label>
+                        <input type="text" id="ponto-equilibrio" name="ponto-equilibrio">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="estoque">Estoque:</label>
+                        <input type="text" id="estoque" name="estoque">
+                        <label for="margem-sugerida">Margem Sugerida (%):</label>
+                        <input type="text" id="margem-sugerida" name="margem-sugerida">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="preco-compra">Preço Compra:</label>
+                        <input type="text" id="preco-compra" name="preco-compra">
+                        <label for="preco-sugerido">Preço Sugerido (R$):</label>
+                        <input type="text" id="preco-sugerido" name="preco-sugerido">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="preco-venda">Preço Venda (R$):</label>
+                        <input type="text" id="preco-venda" name="preco-venda">
+                        <label for="margem-venda">Margem Venda (%):</label>
+                        <input type="text" id="margem-venda" name="margem-venda">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="unidade">Unidade:</label>
+                        <select id="unidade" name="unidade">
+                            <option value="UNID">UNID</option>
+                            <option value="KG">KG</option>
+                            <option value="CM">CM</option>
+                            <option value="CX">CX</option>
+                        </select>
+                        <label for="alteracao-preco">Alteração Preço:</label>
+                        <input type="text" id="alteracao-preco" name="alteracao-preco">
+                    </div>
+        
+                    <div class="grupo">
+                        <label for="ultima-entrada">Última Entrada:</label>
+                        <input type="date" id="ultima-entrada" name="ultima-entrada">
+                        <label for="garantia">Garantia:</label>
+                        <input type="text" id="garantia" name="garantia">
+                    </div>
+
+                    <div class="desativar">
+                        <label for="desativa2">Desativar mercadoria</label>
+                        <input id="desativa2" type="checkbox">
+                    </div>
+                </div>
+                
+                <div class="conteudo">
+                    <button id="addmerc">Adicionar</button>
+                </div>
+
+</div>
+
+
